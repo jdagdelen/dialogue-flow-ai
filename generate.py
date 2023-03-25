@@ -3,11 +3,11 @@ import os
 from tqdm import tqdm
 import json
 
-user = ElevenLabsUser("f316517857e3440132d1461b83d1ac10")
-emotions = {"Happy": "gnvwAqyOCqIZvFwKkjrL", 
-        "Sad": "veA4m8Z1vsC4gldrGbZe", 
-        "Angry": "PluiXb1yLydMsqGb0AoD",
-        "Astonished": "mo72GKoVPleyLUwvA5Jf"}
+user = ElevenLabsUser("YOUR API KEY")
+emotions = {"Happy": "Happy model ID", 
+        "Sad": "Sad Model ID", 
+        "Angry": "Angry Model ID",
+        "Astonished": "Astonished Model ID"}
 
 def generate_samples(dialogue, emotion, id, num_variations=5, path="samples"):
     # check if path exists, if not, create it
